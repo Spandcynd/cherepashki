@@ -1,0 +1,94 @@
+body {
+  background-image: url('https://foni.club/uploads/posts/2023-02/1675285631_foni-club-p-fon-goroda-iz-cherepashek-nindzya-12.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(187, 187, 187);
+  margin: 0 150px;
+  font-size: 16px;
+}
+
+.wrap {
+  backdrop-filter: blur(10px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle, rgba(182, 63, 251, 0.3) 0%, rgba(70, 225, 252, 0.158) 100%);
+}
+
+h1 {
+  color: rgb(107, 80, 182);
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  color: rgb(223, 223, 223);
+}
+
+.main {
+  display: flex;
+}
+
+.image {
+  display: block;
+  max-width: 300px;
+  border: solid rgb(107, 80, 182) 10px;
+  flex: 1 0 0;
+  align-self: center;
+  margin: 20px 0;
+}
+
+.image::after {
+  content: '';
+  display: block;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.abilities {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 30px;
+  min-width: 300px;
+  flex: 2 0 0;
+  align-self: stretch;
+}
+
+.abilities ul {
+  margin: 20px 0 0 0;
+}
+
+ul {
+  font-family: 'Courier New', Courier, monospace;
+  list-style: none;
+}
+
+.turtle {
+  color: aqua;
+}
+
+.description p {
+  font-family: 'Courier New', sans-serif;
+}
+
+.nav {
+  padding: 30px 0 80px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: brown;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.nav a::before {
+  content: '>';
+  display: inline;
+  margin: 0 5px 0 0;
+}
