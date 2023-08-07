@@ -6,6 +6,7 @@ body {
   color: rgb(187, 187, 187);
   margin: 0 150px;
   font-size: 16px;
+  text-shadow: rgb(0, 12, 65) 1px 1px 1px;
 }
 
 .wrap {
