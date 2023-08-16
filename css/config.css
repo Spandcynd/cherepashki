@@ -13,8 +13,10 @@
 
   /* container */
   --container-hor-margin: 100px;
+  --container-max-width: 900px;
 
   /* misc */
+  --fade-in-out-height: 500px;
 
   /* colors */
   --tc-normal: rgb(187, 187, 187);
