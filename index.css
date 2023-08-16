@@ -1,0 +1,201 @@
+body {
+  background-image: url('assets/city-day.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--tc-normal-lightgreen);
+  font-size: var(--fs-normal);
+  font-family: Arial, sans-serif;
+  text-shadow: rgb(0, 12, 65) 1px 1px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  margin-left: var(--container-hor-margin);
+  margin-right: var(--container-hor-margin);
+}
+
+.header {
+  min-height: var(--header-min-height);
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 6, 0, 0.8));
+}
+
+.header__container {
+  margin-top: var(--header-container-ver-margin);
+  margin-bottom: var(--header-container-ver-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: var(--fs-big);
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.t-letter1,
+.m-letter2,
+.n-letter3,
+.t-letter4 {
+  text-transform: uppercase;
+}
+
+.t-letter1 {
+  color: var(--leonardo-color);
+}
+
+.m-letter2 {
+  color: var(--donatello-color);
+}
+
+.n-letter3 {
+  color: var(--raphael-color);
+}
+
+.t-letter4 {
+  color: var(--michelangelo-color);
+}
+
+.nav {
+  height: 100%;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav ul li a {
+  font-family: var(--ff-anchor);
+  color: var(--ac-normal);
+  text-decoration: none;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex; /* for vertical stretch */
+  background-color: rgba(0, 6, 0, 0.8);
+}
+
+.main__container {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.turtle-cards__wrapper {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 800px) {
+  .header__container {
+    display: block;
+  }
+
+  .header__container > * {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .turtle-cards__wrapper {
+    display: block;
+  }
+
+  .turtle-cards__item {
+    /* width: 80%;           доделать адаптив */
+    margin: 0 auto;
+    min-width: 0;
+  }
+
+  .turtle-cards__img-container {
+    min-width: 0;
+  }
+}
+
+.turtle-cards__item {
+  background-color: rgba(5, 36, 0, 0.3);
+}
+
+.turtle-cards__img-container {
+}
+
+.turtle-cards__img {
+}
+
+.turtle-cards__name {
+}
+
+/* ========================================== */
+
+.locations {
+}
+
+.locations__wrapper {
+  display: grid;
+  grid-template-areas:
+    'left right'
+    'whole whole';
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.locations__item {
+  background-color: rgba(5, 36, 0, 0.3);
+}
+
+.locations__item:nth-child(1) {
+  grid-area: left;
+}
+
+.locations__item:nth-child(2) {
+  grid-area: right;
+}
+
+.locations__item:nth-child(3) {
+  grid-area: whole;
+}
+
+.locations__img-container {
+}
+
+.locations__img {
+}
+
+.footer {
+  background: linear-gradient(rgba(0, 6, 0, 0.8), rgb(0, 0, 0));
+  min-height: var(--footer-min-height);
+}
+
+.footer__container {
+  margin-top: var(--footer-container-ver-margin);
+  margin-bottom: var(--footer-container-ver-margin);
+}
+
+/* ========================= */
+
+h1 {
+  color: var(--turtle-green);
+  font-family: 'Bebas Neue';
+  font-size: var(--fs-h1);
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin: 0.75em 0;
+  font-size: var(--fs-h2);
+}
+
+.hr {
+  margin: 10px 0;
+  border: none;
+  height: 2px;
+  background-color: rgb(39, 119, 119);
+}

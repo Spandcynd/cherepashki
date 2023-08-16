@@ -3,77 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="leonardo.css" />
-    <title>Leonardo's Site</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/config.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Turtle Refuge</title>
   </head>
   <body>
-    <div class="wrap">
-      <h1>Leonardo <span class="turtle">Turtle</span></h1>
-      <main class="main">
-        <img
-          class="image"
-          src="https://i.pinimg.com/originals/46/a5/e4/46a5e48a1464b2b13b4e152810309445.jpg"
-          alt="Leo"
-        />
-        <aside class="abilities">
-          <h2>Special Abilities</h2>
+    <header class="header">
+      <div class="header__container container">
+        <div class="logo">
+          <span class="t-letter1">t</span>
+          <span class="m-letter2">m</span>
+          <span class="n-letter3">n</span>
+          <span class="t-letter4">t</span>
+        </div>
+        <nav class="nav">
           <ul>
-            <li>
-              Ninjitsu: Leo is trained in basic ninjutsu skills, some of which
-              include. Stealth. Speed. Agility. Strength.
-            </li>
-            <br />
-            <li>
-              Shell Retraction: Due to his red-eared slider traits, Leo is able
-              to fully retract into his shell.
-            </li>
-            <br />
-            <li>
-              Shinobi Arts (Kenjutsu): Leonardo can utilize Kenjutsu, the
-              historic style of martial arts, tactics, strategy, and espionage
-              of unconventional and guerrilla warfare. Using stealth, agility
-              and a sword, Leonardo is shown to be the most skilled of all the
-              Turtles in this field.
-            </li>
-            <br />
-            <li>
-              Strategic Mind: Leo has shown more of an understanding of strategy
-              when fighting, being able to quickly analyze situations and plan
-              ahead in order to outsmart his enemies.
-            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">About</a></li>
           </ul>
-        </aside>
-      </main>
-      <article class="description">
-        <h2>Description</h2>
-        <p>
-          Leonardo is charismatic, easy going, hilarious, and clever. He can
-          easily figure out any situation, and uses his quick-witted skills to
-          beat opponents, clear obstacles, or land one of his many one-liners
-          which he believes "fire up the team." As stated in "Mystic Mayhem",
-          Leo uses these jokes as a way to cope with strange or stressful
-          situations. He is extremely confident in himself, though this
-          confidence can turn to arrogance in some situations. He is shown to be
-          skeptical at times, like denying the existence of ghosts. However, he
-          enjoys things like magic and mystic powers.
-        </p>
-      </article>
-      <nav class="nav">
-        <h3>See Also:</h3>
-        <ul>
-          <li><a href="raphael.html">Rafael</a></li>
-          <li><a href="donatello.html">Donatello</a></li>
-          <li><a href="michelangelo.html">Michelangelo</a></li>
-        </ul>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <section class="intro">
+          <span
+            >Welcome To
+            <h1>Turtle Refuge</h1></span
+          >
+          <p class="abstract">
+            This site is enthusiast-made mini collection of TMNT series. Here you can find diferent
+            materials about story, characters and fan made content about Ninja Turtles!
+          </p>
+        </section>
+        <div class="hr"></div>
+        <section class="turtle-cards">
+          <h2>Meet your favorite characters</h2>
+          <div class="turtle-cards__wrapper content-wrapper">
+            <div class="turtle-cards__item item">
+              <div class="turtle-cards__img-container img-container">
+                <img
+                  src="./assets/leonardo.jpg"
+                  alt="turtle"
+                  class="turtle-cards__img content-img"
+                />
+              </div>
+              <div class="turtle-cards__name name">
+                <a href="./html/characters/leonardo.html">Leonardo</a>
+              </div>
+            </div>
+            <div class="turtle-cards__item item">
+              <div class="turtle-cards__img-container img-container">
+                <img
+                  src="./assets/donatello.jpg"
+                  alt="turtle"
+                  class="turtle-cards__img content-img"
+                />
+              </div>
+              <div class="turtle-cards__name name">
+                <a href="./html/characters/donatello.html">Donatello</a>
+              </div>
+            </div>
+            <div class="turtle-cards__item item">
+              <div class="turtle-cards__img-container img-container">
+                <img
+                  src="./assets/raphael.jpg"
+                  alt="turtle"
+                  class="turtle-cards__img content-img"
+                />
+              </div>
+              <div class="turtle-cards__name name">
+                <a href="./html/characters/raphael.html">Raphael</a>
+              </div>
+            </div>
+            <div class="turtle-cards__item item">
+              <div class="turtle-cards__img-container img-container">
+                <img
+                  src="./assets/michelangelo.webp"
+                  alt="turtle"
+                  class="turtle-cards__img content-img"
+                />
+              </div>
+              <div class="turtle-cards__name name">
+                <a href="./html/characters/michelangelo.html">Michelangelo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="hr"></div>
+        <section class="locations">
+          <h2>Explore familiar locations</h2>
+          <div class="locations__wrapper content-wrapper">
+            <div class="locations__item item">
+              <div class="locations__img-container img-container">
+                <img src="./assets/home.jpg" alt="location" class="locations__img content-img" />
+              </div>
+              <div class="locations__name name">Sewer</div>
+            </div>
+            <div class="locations__item item">
+              <div class="locations__img-container img-container">
+                <img src="./assets/home.jpg" alt="location" class="locations__img content-img" />
+              </div>
+              <div class="locations__name name">Sewer</div>
+            </div>
+            <div class="locations__item item">
+              <div class="locations__img-container img-container">
+                <img src="./assets/home.jpg" alt="location" class="locations__img content-img" />
+              </div>
+              <div class="locations__name name">Sewer</div>
+            </div>
+          </div>
+        </section>
+        <div class="hr"></div>
+        <section class="gifs">
+          <h2>Additional materials - GIFs</h2>
+          // TO DO
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container"></div>
+    </footer>
   </body>
 </html>

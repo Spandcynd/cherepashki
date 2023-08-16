@@ -1,0 +1,56 @@
+:root {
+  /* body */
+
+  /* header && header__container */
+  --header-min-height: 100px;
+  --header-container-ver-margin: 20px;
+
+  /* main && main__container */
+
+  /* footer && footer__container */
+  --footer-min-height: 100px;
+  --footer-container-ver-margin: 20px;
+
+  /* container */
+  --container-hor-margin: 100px;
+
+  /* misc */
+
+  /* colors */
+  --tc-normal: rgb(187, 187, 187);
+  --tc-normal-lightgreen: rgb(160, 187, 160);
+  --ac-normal: rgb(163, 24, 24);
+
+  --leonardo-color: rgb(0, 170, 230);
+  --raphael-color: rgb(227, 51, 28);
+  --donatello-color: rgb(170, 27, 221);
+  --michelangelo-color: rgb(255, 165, 0);
+  --turtle-green: rgb(76, 156, 35);
+
+  /* typography */
+  --fs-normal: 20px;
+  --fs-big: 4rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2rem;
+}
+
+/* sections.css */
+:root {
+  --grid-gap: 20px;
+}
+
+/* ==================LEGEND================== */
+/* 
+
+ac - anchor color
+as - anchor size
+
+tc - text-color
+fs - text-size
+
+*/
+
+/* ==================GLOSSARY================== */
+/* 
+  container class - bounding box, which sets limits of box's content
+*/
