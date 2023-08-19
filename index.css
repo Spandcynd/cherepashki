@@ -117,11 +117,13 @@ body {
 
 .turtle-cards__wrapper {
   grid-template-columns: 1fr 1fr;
+  row-gap: calc(var(--grid-gap) * 2);
 }
 
 .turtle-cards__item {
   background: linear-gradient(to bottom right, rgb(14 1 21), rgb(0 50 40));
   width: 90%;
+  max-width: 250px;
   position: relative;
   transform-style: preserve-3d;
   border-top-left-radius: 10px;
