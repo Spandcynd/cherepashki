@@ -80,6 +80,26 @@ body {
   font-family: var(--ff-anchor);
   color: var(--ac-normal);
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  background-color: red;
+  transform-origin: right;
+  transition: transform 0.2s ease-out;
+}
+
+.nav ul li a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .main {
@@ -97,42 +117,52 @@ body {
 
 .turtle-cards__wrapper {
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
-@media (max-width: 800px) {
-  .header__container {
-    display: block;
-  }
-
-  .header__container > * {
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .turtle-cards__wrapper {
-    display: block;
-  }
-
-  .turtle-cards__item {
-    /* width: 80%;           доделать адаптив */
-    margin: 0 auto;
-    min-width: 0;
-  }
-
-  .turtle-cards__img-container {
-    min-width: 0;
-  }
 }
 
 .turtle-cards__item {
-  background-color: rgba(5, 36, 0, 0.3);
+  background: linear-gradient(to bottom right, rgb(14 1 21), rgb(0 50 40));
+  width: 90%;
+  position: relative;
+  transform-style: preserve-3d;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 50px;
+}
+
+.turtle-cards__item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 5px;
+  left: 5px;
+  transform: translateZ(-1px);
+  border-bottom-right-radius: 50px;
+}
+
+.turtle-cards__item:nth-child(1)::before {
+  background: linear-gradient(to right bottom, rgb(66 160 66) 50%, rgb(143 159 255));
+}
+
+.turtle-cards__item:nth-child(2)::before {
+  background: linear-gradient(to right bottom, rgb(66 160 66) 50%, rgb(112 113 216));
+}
+
+.turtle-cards__item:nth-child(3)::before {
+  background: linear-gradient(to right bottom, rgb(66 160 66) 50%, rgb(224 74 74));
+}
+
+.turtle-cards__item:nth-child(4)::before {
+  background: linear-gradient(to right bottom, rgb(66 160 66) 50%, rgb(225 176 85));
 }
 
 .turtle-cards__img-container {
+  padding: 0 0 130% 0; /* M-65 beacheeeeez */
 }
 
 .turtle-cards__img {
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 15%;
 }
 
 .turtle-cards__name {
@@ -163,11 +193,11 @@ body {
   grid-template-areas:
     'left right'
     'whole whole';
-  justify-items: center;
 }
 
 .locations__item {
   background-color: rgba(5, 36, 0, 0.3);
+  width: 90%;
 }
 
 .locations__item:nth-child(1) {
@@ -183,6 +213,7 @@ body {
 }
 
 .locations__img-container {
+  min-height: 250px;
 }
 
 .locations__img {
@@ -190,16 +221,20 @@ body {
 
 .gifs__wrapper {
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
 }
 
 .gifs__item {
   background-color: rgba(5, 36, 0, 0.3);
+  width: 90%;
+}
+
+.gifs__img-container {
+  min-height: 200px;
 }
 
 .see-more {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
 }
 
 .see-more a {

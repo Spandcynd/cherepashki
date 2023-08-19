@@ -2,27 +2,24 @@
   display: grid;
   row-gap: var(--grid-gap);
   column-gap: var(--grid-gap);
+  padding: 20px;
 }
 
 .item {
-  box-sizing: content-box;
-  min-width: 250px;
-  width: 80%;
+  margin: 0 auto;
   padding: 20px;
 }
 
 .img-container {
-  min-height: 300px;
-  min-width: 250px;
   position: relative;
 }
 
 .content-img {
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -33,7 +30,7 @@
 
 .name a {
   text-decoration: none;
-  color: var(--turtle-green);
+  color: rgb(143 163 132);
   text-shadow: 0 0 rgba(0, 0, 0, 0);
   transition: text-shadow 0.2s ease;
 }

@@ -1,0 +1,21 @@
+.header__container {
+  display: block;
+}
+
+.header__container > * {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.turtle-cards__wrapper {
+  display: block;
+}
+
+.turtle-cards__item {
+  /* width: 80%;           доделать адаптив */
+  min-width: 0;
+}
+
+.turtle-cards__img-container {
+  min-width: 0;
+}
