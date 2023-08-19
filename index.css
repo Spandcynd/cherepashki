@@ -255,54 +255,6 @@ body {
   max-width: 100%;
 }
 
-.deco-container {
-  position: relative;
-  height: 500px;
-}
-
-.droplets {
-  color: aqua;
-  text-shadow: 0 0 10px aqua;
-  position: absolute;
-}
-
-.droplets:nth-child(1) {
-  top: -100px;
-  left: 200px;
-}
-
-.droplets:nth-child(2) {
-  top: -50px;
-  left: 230px;
-}
-
-.droplets:nth-child(3) {
-  top: -70px;
-  left: 170px;
-}
-
-.droplets:nth-child(4) {
-  top: -35px;
-  right: 170px;
-}
-
-.droplets:nth-child(5) {
-  top: -60px;
-  right: 220px;
-}
-
-.line {
-  position: absolute;
-  top: -50px;
-  left: 190px;
-  width: 600px;
-  height: 10px;
-  background-color: aqua;
-  transform: rotate(-20deg);
-  box-shadow: 0 0 20px 10px aqua;
-  border: 2px solid rgba(47, 0, 255, 0.25);
-}
-
 .dark-fadeout {
   background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   height: var(--fade-in-out-height);
