@@ -1,10 +1,13 @@
+html {
+  font-size: var(--fs-normal);
+}
+
 body {
   background-image: url('assets/city-day.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--tc-normal-lightgreen);
-  font-size: var(--fs-normal);
   font-family: Arial, sans-serif;
   text-shadow: rgb(0, 12, 65) 1px 1px 1px;
   display: flex;
@@ -37,7 +40,7 @@ body {
 }
 
 .logo {
-  font-size: var(--fs-big);
+  font-size: var(--fs-logo);
   font-family: 'Ubuntu';
   font-weight: 700;
   white-space: nowrap;

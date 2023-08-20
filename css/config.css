@@ -30,8 +30,10 @@
   --turtle-green: rgb(76, 156, 35);
 
   /* typography */
+  --fs-small: 16px;
+  --fs-less: 18px;
   --fs-normal: 20px;
-  --fs-big: 4rem;
+  --fs-logo: 4rem;
   --fs-h1: 3rem;
   --fs-h2: 2rem;
 }
