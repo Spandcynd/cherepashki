@@ -1,0 +1,19 @@
+html {
+  font-size: var(--fs-small);
+}
+
+.content-wrapper {
+  display: block;
+}
+
+.turtle-cards__wrapper {
+  padding: 40px 0;
+}
+
+.turtle-cards__item {
+  margin-bottom: 30px;
+}
+
+.turtle-cards__item:last-child {
+  margin-bottom: 0;
+}

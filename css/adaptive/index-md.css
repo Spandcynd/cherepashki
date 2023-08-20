@@ -1,0 +1,15 @@
+:root {
+  --container-hor-margin: 20px;
+}
+
+html {
+  font-size: var(--fs-less);
+}
+
+nav {
+  display: none;
+}
+
+.turtle-cards__wrapper {
+  padding: 20px 0;
+}
